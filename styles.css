@@ -1,0 +1,139 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.add-container{
+    display: flex;
+    column-gap: 2%;
+    
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: #5555551c;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.form-container label,input{
+    margin-bottom: 15px;
+}
+.form-container input{
+    border: none;
+    height: 30px;
+    background: none;
+    border-bottom: 1px solid gray;
+}
+#submit{
+    background-color: green;
+    color: white;
+    padding: 8px 27px;
+}
+#cancel{
+    background-color: red;
+    color: white;
+    padding: 8px 27px;
+}
+
+.add-btn{
+    width: 10%;
+    /* border: 1px solid gray; */
+    border-radius: 7px;
+    padding: 5px 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #5555551c;
+}
+
+.circule {
+    padding: 47px;
+    border-radius: 100%;
+    border: 5px dotted gray;
+    background-color: white;
+    position: relative;
+    animation: rotateBorder 3s linear infinite;
+}
+
+.card{
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 100%;
+    max-width: 250px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.card p {
+    margin: 5px 0 0;
+    color: #555;
+    font-size: 0.9em;
+}
+
+.edit-btn,
+.delet-btn {
+    display: none;
+}
+
+.more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.show-container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    padding: 20px;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    background: none;
+}
+
+.card:hover .edit-btn,
+.card:hover .delet-btn {
+    display: inline-block;
+}
+
+.edit-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+@keyframes rotateBorder {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
